@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>问卷设计工具</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="wrapper">
+    <div class="row">
+      <div class="form">
+        <div class="row">
+          问卷ID：<br />
+          <input id="qid" type="text" value="1" />
+        </div>
+        <div class="row">
+          问卷名称：<br />
+          <input id="qname" type="text" value="测试问卷" />
+        </div>
+        <div class="row">
+          问卷题目：<br />
+          <textarea name="" id="text" cols="60" rows="20">
+  1. 题目1
+  选项1
+  选项2
+  选项3
+  
+  2.题目2[多选题]
+  选项4
+  选项5
+  选项6
+  
+  3.单行文本题
+          </textarea>
+        </div>
+        <div class="row">
+          <button id="btn">生成问卷</button>
+        </div>
+
+        <div class="row">
+          JSON结果：<br />
+          <pre class="json-preview" id="json-preview"></pre>
+        </div>
+        <div class="row">
+          <button id="copy">拷贝JSON内容</button>
+        </div>
+      </div>
+      <div class="result">
+        <div class="row">
+          问卷预览：<br />
+          <div class="html-preview" id="html-preview"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      「Powered by
+      <a href="https://webify.cloudbase.net/">CloudBase Webify</a>」
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
+<!doctype html>

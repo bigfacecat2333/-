@@ -1,0 +1,20 @@
+
+  .title{
+    padding: 40rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+  }
+  
+  .wrap{
+    background-color: white;
+  }
+  .item{
+    box-sizing: border-box;
+    padding: 0 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: solid 1px lightgray;
+  }
+  .item:first-child{
+    border-top: solid 1px lightgray;
+  }

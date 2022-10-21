@@ -1,0 +1,35 @@
+{
+  "id": 2,
+  "name": "肿瘤T-分期病变定位",
+  "questions": [
+    {
+      "id": 1,
+      "title": "腹膜反折",
+      "question_type": "radio",
+      "question_type_text": "单选题",
+      "options": [
+        { "option_id": "A", "option_value": "腹膜反折以上、未受累" },
+        { "option_id": "B", "option_value": "腹膜反折以下、未受累" },
+        { "option_id": "C", "option_value": "跨腹膜反折、未受累" },
+        { "option_id": "D", "option_value": "腹膜反折受累" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "参照肿瘤下缘至肛缘距离定位",
+      "question_type": "radio",
+      "question_type_text": "单选题",
+      "options": [
+        { "option_id": "A", "option_value": "上段直肠癌：10~15 cm以内" },
+        { "option_id": "B", "option_value": "中段直肠癌：5~10 cm以内" },
+        { "option_id": "C", "option_value": "下段直肠癌：5 cm以内" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "肿瘤下缘距肛直肠环距离（cm）",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    }
+  ]
+}

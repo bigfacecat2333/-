@@ -1,0 +1,40 @@
+{
+  "id": 1,
+  "name": "基本信息",
+  "questions": [
+    {
+      "id": 1,
+      "title": "姓名",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 2,
+      "title": "性别",
+      "question_type": "radio",
+      "question_type_text": "单选题",
+      "options": [
+        { "option_id": "A", "option_value": "男" },
+        { "option_id": "B", "option_value": "女" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "年龄",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 4,
+      "title": "影像号",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 5,
+      "title": "检查日期",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    }
+  ]
+}

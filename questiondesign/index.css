@@ -1,0 +1,41 @@
+.form {
+    float: left;
+    min-height: 300px;
+    padding: 20px;
+  }
+  .row {
+    clear: both;
+    margin: 5px 0;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .result {
+    float: left;
+    margin-left: 20px;
+  }
+  .question-wrap {
+    padding: 20px;
+  }
+  .question-wrap:hover {
+    background-color: #f5f5f5;
+  }
+  .label {
+    display: block;
+    margin: 5px;
+  }
+  .html-preview {
+    width: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: solid 1px #ccc;
+  }
+  .json-preview {
+    width: 500px;
+    height: 100px;
+    border: solid 1px #ccc;
+    overflow: scroll;
+  }
+  

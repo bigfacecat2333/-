@@ -1,0 +1,15 @@
+<view class="title">
+    直肠癌MRI结构式报告
+</view>
+
+<view class="wrap">
+  <view
+    wx:for="{{qaList}}"
+    wx:key="id"
+    data-id="{{item.id}}"
+    bindtap="gotoDetail"
+    class="item"
+  >
+    {{item.name}}
+  </view>
+</view>

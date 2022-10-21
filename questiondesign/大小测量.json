@@ -1,0 +1,70 @@
+{
+  "id": 3,
+  "name": "大小测量",
+  "questions": [
+    {
+      "id": 1,
+      "title": "肿块型斜轴位测量（mm）",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 2,
+      "title": "肿块型矢状位测量（纵径）(mm)",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 3,
+      "title": "肠壁浸润型斜轴位测量(mm)",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 4,
+      "title": "肠壁浸润型矢状位测量（纵径）(mm)",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    },
+    {
+      "id": 2,
+      "title": "病变环绕肠周径",
+      "question_type": "radio",
+      "question_type_text": "单选题",
+      "options": [
+        { "option_id": "A", "option_value": "＜1/4周" },
+        { "option_id": "B", "option_value": "1/4～1/2周" },
+        { "option_id": "C", "option_value": "1/2～3/4周" },
+        { "option_id": "D", "option_value": "3/4～1周" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "肿瘤浸润程度描述-T分期",
+      "question_type": "radio",
+      "question_type_text": "单选题",
+      "options": [
+        { "option_id": "A", "option_value": "T1：肿瘤侵犯至黏膜下层" },
+        {
+          "option_id": "B",
+          "option_value": "T2：肿瘤侵犯固有肌层，但未穿透固有肌层"
+        },
+        { "option_id": "C", "option_value": "T3：肿瘤突破固有肌层外膜" },
+        { "option_id": "D", "option_value": "T3a：肿瘤突破肌层＜5 mm" },
+        { "option_id": "E", "option_value": "T3b：肿瘤突破肌层5~10 mm" },
+        { "option_id": "F", "option_value": "T3c：肿瘤突破肌层＞10 mm" },
+        {
+          "option_id": "G",
+          "option_value": "T4a：肿瘤侵透腹膜或浆膜（上段直肠）"
+        },
+        { "option_id": "H", "option_value": "T4b：肿瘤侵犯毗邻脏器" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "肿瘤突破固有肌层外膜，到达直肠周围系膜脂肪内多少(mm)",
+      "question_type": "input",
+      "question_type_text": "填空题"
+    }
+  ]
+}

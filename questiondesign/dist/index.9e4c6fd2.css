@@ -1,0 +1,50 @@
+.form {
+  float: left;
+  min-height: 300px;
+  padding: 20px;
+}
+
+.row {
+  clear: both;
+  margin: 5px 0;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.result {
+  float: left;
+  margin-left: 20px;
+}
+
+.question-wrap {
+  padding: 20px;
+}
+
+.question-wrap:hover {
+  background-color: #f5f5f5;
+}
+
+.label {
+  margin: 5px;
+  display: block;
+}
+
+.html-preview {
+  width: 500px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.json-preview {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #ccc;
+  overflow: scroll;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

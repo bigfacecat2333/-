@@ -1,0 +1,100 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-name">{{ name }}</view>
+
+  <block wx:for="{{ questions }}" wx:key="id" >
+
+    <view wx:if="{{ item.question_type == 'input' }}" class="question-wrap">
+      <view class="question-title">
+        {{ item.id }}. {{ item.title }}
+      </view>
+      <view wx:if="{{1 > 3}}"  class="question-con">
+        <input 
+          data-qid="{{ item.id }}"
+          data-qtype="{{ item.question_type }}"
+          bindinput="onTextInput" 
+          type="{{ item.input_type }}" 
+          placeholder="请填写" 
+          class="input-text" 
+        />
+        <input 
+          data-qid="{{ item.id }}"
+          data-qtype="{{ item.question_type }}"
+          bindinput="onTextInput" 
+          type="{{ item.input_type }}" 
+          placeholder="请填写" 
+          class="input-text" 
+        />
+      </view>
+      <view wx:else class="question-con">
+        <input 
+          data-qid="{{ item.id }}"
+          data-qtype="{{ item.question_type }}"
+          bindinput="onTextInput" 
+          type="{{ item.input_type }}" 
+          placeholder="请填写" 
+          class="input-text" 
+        />
+      </view>
+    </view>
+
+    <view wx:elif="{{ item.question_type == 'radio' }}" class="question-wrap">
+      <view class="question-title">{{ item.id }}. {{ item.title }}</view>
+      <view class="question-con">
+        <radio-group
+          data-qid="{{ item.id }}"
+          data-qtype="{{ item.question_type }}"
+          bindchange="onRadioChange"
+        >
+          <label 
+            wx:for="{{ item.options }}" 
+            wx:for-item="opt"
+            wx:key="option_id"
+            class="label-row"
+          >
+            <radio value="{{ opt.option_id }}"/> {{ opt.option_value }}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+    <view wx:elif="{{ item.question_type == 'checkbox' }}" class="question-wrap">
+      <view class="question-title">{{ item.id }}. {{ item.title }}</view>
+      <view class="question-con">
+        <checkbox-group
+          data-qid="{{ item.id }}"
+          data-qtype="{{ item.question_type }}"
+          bindchange="onCheckboxChange"
+        >
+          <label 
+            wx:for="{{ item.options }}" 
+            wx:for-item="opt"
+            wx:key="option_id"
+            class="label-row"
+          >
+            <checkbox value="{{ opt.option_id }}"/> {{ opt.option_value }}
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+
+    <view wx:elif="{{ item.question_type == 'date' }}" class="question-wrap">
+        <view class="question-title">{{ item.id }}. {{ item.title }}</view>
+        <view class="question-con">
+            <picker mode="date" value="{{createDate}}" start="2020-01-01" end="2089-01-01" bindchange="bindDateChange" >
+                <view class="picker">
+                    当前选择日期:{{date}}
+                    <input style="" name="createDate" id="{{createDate}}" value="{{date}}" 
+                    style="display:none" 
+                    />
+                </view>
+            </picker>
+        </view>
+    </view>
+
+  </block>
+
+  <view class="btn-row">
+    <button bindtap="submitAnswer" type="primary">提交答案</button>
+  </view>
+</view>

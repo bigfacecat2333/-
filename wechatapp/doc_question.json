@@ -1,0 +1,60 @@
+{
+    "id": 1,
+    "name": "专业信息调研",
+    "questions": [
+      {
+        "id": 1,
+        "title": "姓名",
+        "question_type": "input",
+        "input_type": "text"
+      },
+      {
+        "id": 2,
+        "title": "性别",
+        "question_type": "radio",
+        "options": [
+          {
+            "option_id": "A",
+            "option_value": "男"
+          },
+          {
+            "option_id": "B",
+            "option_value": "女"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "年级",
+        "question_type": "input",
+        "input_type": "number"
+      },
+      {
+        "id": 4,
+        "title": "选择课程",
+        "question_type": "checkbox",
+        "options": [
+          {
+            "option_id": "A",
+            "option_value": "数学与自然科学"
+          },
+          {
+            "option_id": "B",
+            "option_value": "社会心理学"
+          },
+          {
+            "option_id": "C",
+            "option_value": "哲学与心理学"
+          },
+          {
+            "option_id": "D",
+            "option_value": "历史学"
+          },
+          {
+            "option_id": "E",
+            "option_value": "语言学、文学与艺术"
+          }
+        ]
+      }
+    ]
+  }

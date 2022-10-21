@@ -1,0 +1,1 @@
+"E:\Users\shaw\Program files\微信web开发者工具\cli.bat" cloud functions deploy --e dev-4gv47eeqc2c1d37b --n quickstartFunctions --r --project "E:\xxy\java\问卷调查\wechatapp" --report_first --report
