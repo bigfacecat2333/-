@@ -1,29 +1,34 @@
 /**index.wxss**/
-.container{
+.container {
   margin: 20rpx;
 }
 
-.page-name{
+.page-name {
   font-size: 36rpx;
   line-height: 2;
   text-align: center;
 }
 
-.question-wrap{
-  margin: 20rpx 0; 
+.question-wrap {
+  margin: 20rpx 0;
+  align-self: start;
 }
 
-.question-title{
+.question-title {
   font-size: 28rpx;
   margin: 20rpx 0 10rpx;
 }
 
-.question-con{
-  font-size: medium;
-  margin-left: 20rpx;
+.question-con {
+  padding-left: 20rpx;
 }
 
-.input-text{
+.label-row {
+  display: block;
+  margin: 10rpx 0;
+}
+
+.input-text {
   box-sizing: border-box;
   height: 2em;
   line-height: 2em;
@@ -32,7 +37,6 @@
   padding: 0 6rpx;
 }
 
-.label-row{
-  display: block;
-  margin: 10rpx 0;
+.btn-row {
+  margin: 20rpx 0;
 }
